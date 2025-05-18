@@ -37,6 +37,7 @@ xui.Class('App', 'xui.Module',{
             append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button7")
+                .setName("ok_button")
                 .setLeft("39.61904761904762em")
                 .setTop("18.793650793650794em")
                 .setWidth("15.161904761904761em")
@@ -44,7 +45,23 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("ok I understand.")
                 .setFontColor("#FF0000")
                 .setFontSize("1.5em")
-                .setFontFamily("arial")
+                .setFontFamily("Comic Sans MS")
+                .setValue("ok")
+                .onClick([
+                    {
+                        "desc" : "Action 1",
+                        "type" : "other",
+                        "target" : "msg",
+                        "args" : [
+                            "???!!!??@/?#??e!?d??dqugwduuieu get out WGIWUH3QGH8G^%&*(*^&R^%RF^&B^F%DF%YBFFVy\n",
+                            "ITS HERE",
+                            200,
+                            5000
+                        ],
+                        "method" : "message",
+                        "event" : 1
+                    }
+                ])
             );
             
             append(
